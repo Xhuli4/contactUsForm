@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    border-radius: 5px;
+    padding: 30px 60px 40px 40px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: darkcyan;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 30px;
+    color: darkcyan;
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.content .left-side .details .text1,
+.content .left-side .details .text2 {
+    font-size: 16px;
+    color: rgb(4, 186, 186);
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+    font-size: 29px;
+    font-weight: 900;
+    color: darkcyan;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    background: rgb(217, 239, 239);
+    border-radius: 8px;
+    padding: 0 15px;
+    resize: none;
+    outline: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .button {
+    margin-top: 12px;
+    display: inline-block;
+}
+
+.right-side .button input[type="button"] {
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: darkcyan;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover {
+    font-size: 19px;
+    background: black;
+}
